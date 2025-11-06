@@ -90,7 +90,7 @@ class Medicamento {
               let listaDeMedicamento: Array<Medicamento> = [];
 
      
-            const querySelectClientes = `SELECT * FROM medicamentos;`;
+            const querySelectClientes = `SELECT * FROM cadastro_medicamentos;`;
 
        
             const respostaBD = await database.query(querySelectClientes);

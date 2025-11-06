@@ -159,7 +159,7 @@ class Cliente {
 
     static async listarCliente(idCliente: number): Promise<Cliente | null> {
         try{
-            const querySelectClientes = `SELECT * FROM clientes WHERE id_cliente=$1;`;
+            const querySelectClientes = `SELECT * FROM cadastro_clientes WHERE id_cliente=$1;`;
 
             const respostaBD = await database.query(querySelectClientes, [idCliente]);
 
